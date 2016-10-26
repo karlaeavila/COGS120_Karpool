@@ -1,0 +1,30 @@
+/*CSS for our website*/
+body {
+	background-color: #6bafe0;
+	/*text-align: center;*/
+}
+.container{
+	text-align: center;
+	position: absolute;
+	margin: 500 auto;
+	width: 1150px;
+	height: 1150px;
+}
+.button1{
+	padding: 15px 32px;
+	text-align: right;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+.button {
+	/*background-color: white;
+	border: 2px solid #000000;
+	color: black;*/
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	/*border-radius: 8px;*/
+}

@@ -1,9 +1,16 @@
 /**
  * Introduction to Human-Computer Interaction
+<<<<<<< HEAD
  * Lab 2
  * --------------
  * Created by: Michael Bernstein
  * Last updated: December 2013
+=======
+ * Karpool
+ * --------------
+ * Created by: Jimmy Martinez, Erik Chau, Karla Avila
+ * Last updated: October 2016
+>>>>>>> eed50dfb7b8f5dc89c959eb9cac4f936604c8779
  */
 var PORT = 3000;
 
@@ -28,4 +35,8 @@ app.use(express.static(__dirname + '/static'));
 var port = process.env.PORT || PORT; // 80 for web, 3000 for development
 app.listen(port, function() {
 	console.log("Node.js server running on port %s", port);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> eed50dfb7b8f5dc89c959eb9cac4f936604c8779

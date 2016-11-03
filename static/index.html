@@ -4,36 +4,65 @@
   <head>
   	<title>Welcome to Karpool!</title>
   	<link href="css/Karpool.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+      <style>
+		
+		</style>
   </head>
   
-  <body>
-		<style>
-		body{
-			background-color: #008080;
-		}
-		</style>
 
   <body>
-  	<div class="container">
+      <row>
+          <div class="col-xs-2" style="background-color:white"></div>
+  	<div class="container col-xs-8" style="background-color: #008080;">
   		<h1 style="color:white;"><center>Welcome to Karpool!</center></h1>
-  		<h4 style="color:white;"><center>What would you like to do?</center></h4>
+  		<h4 style="color:white;"><center>Meet people, Get places.</center></h4>
 		
-		<h2></h2>
-		<center><img src="carro.png.png" alt="Car" style="width:200px;height:150px;"> </center>
 		
-  		<div class="button" id="Login">
-  			<a href="login.html">
-  				<center><button type="button">Login!</button></center>
-  			</a>
-  		</div>
+		<center>
+            <img src="carro.png.png" alt="Car" style="width:200px;height:150px;padding-bottom:20px">
+        </center>
+        
+        
+    
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Get Started</button>
+       
+      
 
-		
-  		<center><p> OR </p></center>
-  		<div class="button" id="Make">
-  			<a href="makeaprofile.html">
-  				<center><button type="button">Sign Up!</button></center>
-  			</a>
-  		</div>
-  	</div>
+                <!-- The Modal -->
+                <div id="login-modal" class="modal">
+
+                   <div class="modal-dialog">
+				    <div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				        <form>
+					       <input type="text" name="user" placeholder="Email">
+					       <input type="password" name="pass" placeholder="Password">
+                            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				        </form>
+					
+                        <div class="login-help">
+					   <a href="#" style="text-decoration: none;">Register</a> - 
+                       <a href="#" style="text-decoration: none;">Forgot Password</a>
+                        </div>
+				    </div>
+			     </div>
+
+                </div>
+    
+      
+
+
+      </div> 
+          <div class="col-xs-2" style="background-color:white"></div>
+      </row>
+      <!-- JQuery -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/modal.js"></script>
+      
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,40 +1,93 @@
 <!doctype html>
 <html>
   <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
   	<title>Going Somewhere</title>
-  	<a href="areyou.html">
-  		<button type="buttom">Back</button>
-  	</a>
-  	<center>
-  		<form action="match.html">
-  			Where are you going?<br>
-  			<input type="text" name="location"><br>
-  			How far are you willing to drive?<br>
-  			<input type="text" name="distance" value="Miles"><br> 
-  			How much would you like to charge per person?<br>
-  			<input type="text" name="charge" value="Dollars"><br>
-  			How much room do you have left in your car?<br>
-  			<input type="text" name="seats"><br>
-  			Which vehicle of yours are you driving?<br>
-  			<input type="text" name="vehicle"><br>
-  			How long are you willing to wait?<br>
-  			<input type="text" name="wait" value="Minutes"><br>
-  		</form>
-  		<a href="match.html">
-  			<button type="button">Enter</button>
-  		</a>
-  	</center>
  
-  <body>
     <style>
   	body{
-  		background-color: #d27add;
+  		background-color: #F7F7F7;
 	}
+        p{
+            margin-bottom: .15em;
+            margin-top: .15em;
+        }
+        input{
+            margin-bottom: .15em;
+            margin-top: .15em;
+        }
   </style>
   </head>
+      
   <body>
-  
-  
-  
+    <div class="row" style="padding-bottom:4em; background">  
+        <nav class="navbar navbar-default navbar-fixed-top col-xs-6 col-xs-offset-3" style="background-color:#008080;">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a href="areyou.html" style="text-decoration:none">
+        <button type="button" class="btn btn-default navbar-btn">Home</button></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+      <button type="button" class="btn btn-default navbar-btn navbar-right">My Account</button>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+      
+      
+      <div class="row">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-6" style="text-align:center">
+              <h2>Driver's Form</h2>
+                <form action="match.html">
+                    <p>Where are you going?</p>
+                    <input type="text" name="location">
+                    <p>How far are you willing to drive?</p>
+                    <input type="text" name="distance" value="Miles"> 
+                    <p>How much would you like to charge per person?</p>
+  			        <input type="text" name="charge" value="Dollars">
+                    <p>How much room do you have left in your car?</p>
+  			        <input type="text" name="seats">
+                    <p>Which vehicle of yours are you driving?</p>
+  			        <input type="text" name="vehicle">
+                    <p>How long are you willing to wait?</p>
+  			        <input type="text" name="wait" value="Minutes">
+  		        </form>
+  		        
+  			<button id="myBtn" type="button" style="margin-top: 1em;">Submit</button>
+  		        
+              
+              <!-- The Modal -->
+              <div id="login-modal" class="modal">
+
+                  <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">x</span>
+                    <h1><center>Thank you!</center></h1>
+  		            <h3><center>We will notify you when we find you a match!</center></h3>
+                    </div>
+
+                    </div>
+            </div>
+          <div class="col-xs-3"></div>
+      </div>
+      
+       <!-- JQuery -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/modal.js"></script>
+      
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

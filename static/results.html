@@ -2,6 +2,31 @@
 
 <head>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+
+
+<script>
+
+    $(function() {
+
+
+   var place = [];
+
+   $.getJSON('data.json', function(data) {
+       $.each(data.data, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.place + "</td>" +
+           "<td>" + f.description + "</td>" + "<td>" + f.seats + "</td>" + "<td>" + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
+
+
+
     <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -24,7 +49,36 @@
     </style>
 </head>
 
+
+
+
+
 <body>
+
+
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>Place</th>
+            <th>Description</th>
+            <th>Seats</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+
+
+
+
+
+
      <div class="row" style="padding-bottom:4em">  
         <nav class="navbar navbar-default navbar-fixed-top col-xs-6 col-xs-offset-3">
     <div class="container-fluid">

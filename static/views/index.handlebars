@@ -77,16 +77,16 @@
 </nav>
 </div>
 
- 
+ {{#each places}}
 <div class="row" style="text-decoration:none"><!-- 1st selection -->
     <div class="col-xs-3"></div>
     <a href="~/../almostthere.html" style="text-decoration: none;">
     <div class="col-xs-6" id="result" style="border-color:black; border-size:2px;">
         <div class="col-xs-10" style="outline-width: thick;">
-        <p> La Jolla Cove </p>
+        <p> {{place}} </p>
         <p style="color: white">_</p>
-        <p> Driver: John</p>
-        <p> 2 Seat Available</p>
+        <p> Driver: {{driver}}</p>
+        <p> {{seats}} Seat Available</p>
         </div>
         <div class="col-xs-2" id="dist">
         <p> 0.3mi </p>
@@ -97,66 +97,18 @@
     <div class="col-xs-3">
     </div>
 </div><!-- 1st selection -->    
+{{/each}}
     
-<div class="row"><!-- 2nd selection -->
-    <div class="col-xs-3"></div>
-    <a href="../almostthere.html">
-    <div class="col-xs-6" id="result" style="border-color:black; border-size:2px;">
-        <div class="col-xs-10">
-        <p> La Jolla Shores </p>
-        <p style="color: white">_</p>
-        <p> Driver: Heather</p>
-        <p> 4 Seat Available</p>
-        </div>
-        <div class="col-xs-2" id="dist">
-        <p> 0.4mi </p>
-        <p> $2</p>
-        </div>
-    </div>
-    </a>
-    <div class="col-xs-3">
-    </div>
-</div><!-- 2nd selection -->
-    
-<div class="row"><!-- 3rd selection -->
-    <div class="col-xs-3"></div>
-    <a href="../almostthere.html">
-    <div class="col-xs-6" id="result" style="border-color:black; border-size:2px;">
-        <div class="col-xs-10">
-        <p> The Taco Stand </p>
-        <p style="color: white">_</p>
-        <p> Driver: Andrew</p>
-        <p> 1 Seat Available</p>
-        </div>
-        <div class="col-xs-2" id="dist">
-        <p> 0.8mi </p>
-        <p> $2</p>
-        </div>
-    </div>
-    </a>
-    <div class="col-xs-3">
-    </div>
-</div><!-- 3rd selection -->
-    
-<div class="row"><!-- 4th selection -->
-    <div class="col-xs-3"></div>
-    <a href="../almostthere.html">
-    <div class="col-xs-6" id="result" style="border-color:black; border-size:2px;">
-        <div class="col-xs-10">
-        <p> Kung Fu Tea </p>
-        <p style="color: white">_</p>
-        <p> Driver: Jimmy</p>
-        <p> 3 Seat Available</p>
-        </div>
-        <div class="col-xs-2" id="dist">
-        <p> 2.8mi </p>
-        <p> $4</p>
-        </div>
-    </div>
-    </a>
-    <div class="col-xs-3">
-    </div>
-</div><!-- 4th selection -->    
+
+
+
+
+
+
+
+
+
+  
     
 
     

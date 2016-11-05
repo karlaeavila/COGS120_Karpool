@@ -1,8 +1,6 @@
 var data = require("../data.json");
 
-exports.addPlace = function(req, res) {
+exports.addFriend = function(req, res) {
 	// Your code goes here
-  console.log("yay, addPlace just ran!");
-
-
+  console.log("yay, addFriend just ran!");
 }

@@ -1,0 +1,143 @@
+/*body{
+    padding: 50px;
+}
+.modal-dialog {
+    width: 300px;
+}
+.modal-footer {
+    height: 70px;
+    margin: 0;
+}
+.modal-footer .btn {
+    font-weight: bold;
+}
+.modal-footer .progress {
+    display: none;
+    height: 32px;
+    margin: 0;
+}
+.input-group-addon {
+    color: #fff;
+    background: #6F92B7;
+}*/
+
+
+
+body{
+    background-color: #A9BCD0;
+    width: auto;
+    display: block;
+    float: none;
+}
+.jumbotron{
+    background-color: #fff;
+}
+.container{
+    text-align: center;
+    position: absolute;
+    margin: 500 auto;
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+}
+#main-footer{
+    text-align: center;
+    display: inline-block;
+}
+.no-padding{
+padding: 0;
+}
+.main-form .nav > li{
+width: 50%;
+}
+.main-form .nav-tabs > li > a{
+border-radius: 0;
+display: inline-block;
+width: 100%;
+text-align: center;
+outline: 0;
+text-transform: uppercase;
+color: #6F92B7;
+font-weight: 600;
+font-size: 13px;
+}
+.main-form .nav-tabs > li > a:hover{
+color: #6F92B7;
+}
+.main-form .form-control{
+margin-top: 5px;
+height: 40px;
+border-radius: 0;
+box-shadow: none;
+border:1px solid #f0f0f0;
+}
+.main-form .form-control:focus{
+border-color: #fc80b2;
+}
+.main-form .checkbox{
+margin-left: 20px;
+color: #999;
+}
+.main-form .checkbox a{
+color: #6F92B7;
+}
+.main-form .btn-submit{
+display: block;
+background: #6F92B7;
+color: #fff;
+border-radius: 0;
+width: 100%;
+text-transform: uppercase;
+margin-top: 15px;
+padding: 12px;
+}
+.main-form .tab-content{
+padding: 60px 0;
+}
+
+
+
+
+/*Carousel Styling*/
+.slide1{
+    /*background-image: */
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide2{
+    /*background-image: */
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide3{
+    /*background-image: */
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-caption h1{
+    font-size: 5.4em;
+    padding-bottom: .8em;
+}
+.carousel-caption p{
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+#signup-btn{
+    /*height: 75px;
+    width: 150px;
+    text-align: center;*/
+    display: inline-block;
+background: #6F92B7;
+color: #fff;
+border-radius: 0;
+width: 30%;
+text-transform: uppercase;
+margin-top: 15px;
+padding: 12px;
+}

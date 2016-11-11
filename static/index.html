@@ -2,25 +2,82 @@
 <html>
 <head>
 	<title>Karpool</title>
+
+
 	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="css/introHCI.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--<script src="css/login.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
-  <body>
-		<style>
-		body{
-			background-color: #A9BCD0;
-		}
-		</style>
-	<body>
+<body>
+
+<!--<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Karpool</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+</div>-->
+
+
+<!--<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Karpool App</a>
+        </div>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rides<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Previous</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
 		
 		
 <!--header code -->
@@ -37,7 +94,7 @@
 		
 		
 
-<!-- Start of Login Code -->
+<!-- Start of Login Code --
     <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
@@ -74,7 +131,7 @@
 
 
                                 <div style="margin-top:10px" class="form-group">
-                                    <!-- Button -->
+                                    !-- Button --
 
                                     <div class="col-sm-12 controls">
                                       <a id="btn-login" href="areyou.html" class="btn btn-success">Login  </a>
@@ -153,7 +210,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <!-- Button -->                                        
+                                    !-- Button --                                        
                                     <div class="col-md-offset-3 col-md-9">
                                         <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
                                         <span style="margin-left:8px;">or</span>  
@@ -184,8 +241,107 @@
 
 
 
+
+<!-- My login attempt -->
+
+<div class="container">
+<div class="row">
+<div class="col-sm-8">
+<!--<div class="form-wrapper">
+<div class="my-form">-->
+<div class="col-sm-6 no-padding">
+<div class="info">
+<!--<div id="carousel-id" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item">
+<img src="https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/envelope-2-128.png" class="img-responsive center-block" alt="">
+<div class="container">
+<div class="carousel-caption">
+<p>display properly due to web browser security rules.</p>
+
+</div>
+</div>
+</div>
+<div class="item">
+<img src="https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/cup-128.png" class="img-responsive center-block" alt="">
+<div class="container">
+<div class="carousel-caption">
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+</div>
+</div>
+</div>
+<div class="item active">
+<img src="https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/headphone-big-128.png" class="img-responsive center-block" alt="">
+<div class="container">
+<div class="carousel-caption">
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>-->
+</div>
+</div>
+<div class="col-sm-6 form-bg">
+<div class="main-form">
+<div role="tabpanel">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active">
+<a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
+</li>
+<li role="presentation">
+<a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">Signup</a>
+</li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="login">
+<form action="" method="get" accept-charset="utf-8">
+<input class="form-control" type="email" name="" value="" placeholder="Email Address">
+<input class="form-control" type="password" name="" value="" placeholder="Password">
+<div class="checkbox" align="left"><input type="checkbox" name="" value=""> Remember. <a href="" title="">Forgot Password?</a></div>
+<input class="btn btn-submit" href="areyou.html" type="submit" name="" value="Login">
+</form>
+</div>
+
+
+<div role="tabpanel" class="tab-pane" id="signup">
+<form action="" method="get" accept-charset="utf-8">
+<input class="form-control" type="text" name="" value="" placeholder="Full Name">
+<input class="form-control" type="email" name="" value="" placeholder="Email Address">
+<input class="form-control" type="text" name="" value="" placeholder="Phone Number">
+<input class="form-control" type="password" name="" value="" placeholder="Password">
+<input class="btn btn-submit" href="areyou.html" type="submit" name="" value="Sign up">
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

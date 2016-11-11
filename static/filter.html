@@ -2,35 +2,132 @@
 <html>
   <head>
 
+<title>Filter</title>
 
-  	<title>Filter</title>
-  	<a href="areyou.html">
-  		<button type="button">Back</button>
-  	</a>
-  	<center>
-  		<form action="results.html">
-  			How much do you want to pay?<br>
-  			<p> </p>
-  			<input type="text" name="pay" value="$"><br>
-  			<p> </p>
-  			How far do you want to go?<br>
-  			<p> </p>
-  			<input type="text" name="far" value="miles"><br>
-  			<p> </p>
-  			How many seats are you looking for?<br>
-  			<p> </p>
-  			<input type="text" name="seats"><br>
-  		</form>
-  	</center>
-  	<a href="results.html">
-  		<p style="text-align:right"><button type="button" text-align="right">Enter</button>
-  	</a>
-  </head>
-  <body>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- boostrap script -->
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- boostrap script end -->
+
+  <!-- Latest compiled and minified JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">-->
+
+ 
     <style>
-      body{
-        background-color: #ddaf30;:style;
-      }
-    </style>
+    body{
+      background-color: #A9BCD0;
+  }
+        p{
+            margin-bottom: .15em;
+            margin-top: .15em;
+        }
+        input{
+            margin-bottom: .15em;
+            margin-top: .15em;
+        }
+  </style>
+  </head>
+
+
+
+
+  <body>
+
+
+    <!-- Navigation Bar HTML -->
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!--<a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road"></span></a>-->
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="areyou.html">Home</a></li>
+      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Current Ride</a></li>
+            <li><a href="#">Previois Rides</a></li>
+          </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navigation Bar HTML -->
+
+
+<!-- Start of Form -->
+<div class="row">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-6" style="text-align:center">
+              <h2>What are you looking for?</h2>
+                <form action="results.html">
+                    <p>How much do you want to pay?</p>
+                    <input type="text" name="charge" placeholder="$"><br>
+                    <input type="checkbox" name="nopref"> No Preference<br>
+                    <p>How far do you want to go?</p>
+                    <input type="text" name="distance" placeholder="Miles"><br>
+                    <input type="checkbox" name="nopref"> No Preference<br>
+                    <p>How many seats are you looking for??</p>
+                    <input type="text" name="charge"><br>
+                    <input type="checkbox" name="nopref"> No Preference<br>
+              </form>
+              
+        <!--<button id="myBtn" type="button" style="margin-top: 1em;">Submit</button-->
+        <a href="results.html" style="text-decoration:none">
+        <button type="button" class="btn btn-default navbar-btn">Submit</button></a>
+              
+              
+            </div>
+          <div class="col-xs-3"></div>
+      </div>
+    
+<!-- End of form -->
+
+
+<!-- testing slider -->
+
+
+
+
+
+
+
+    <!-- end test slider -->
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

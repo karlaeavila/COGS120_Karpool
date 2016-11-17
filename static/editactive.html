@@ -73,7 +73,7 @@ body{
 
                 <button class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown">Manage Trips <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span></button>
                       <ul class="dropdown-menu">
-                        <li><a href="previoustrips.html">Previous Trips</a></li>
+                        <li><a href="#">Previous Trips</a></li>
                       </ul>
             
                 <!--<button class="btn btn-default btn-md">
@@ -91,26 +91,26 @@ body{
             <h1>Active Trip:</h1>
             <hr style="width:100%; color: black; align:left">
             <div class="col-xs-9">
-            
-                <h5>Current Destination: La Jolla</h5>
-                <h5>Current Car: SUV</h5>
-                <h5>Current Seats: 2</h5>
-                <h5>Current Price: $3</h5>
-            </div>
-            <div class="col-xs-3" style="text-align:right">
-                <h5><a href="editactive.html">Edit</a></h5>
-                <h5><a href="editactive.html">Edit</a></h5>
-                <h5><a href="editactive.html">Edit</a></h5>
-                <h5><a href="editactive.html">Edit</a></h5>
+              <form action="managetrips.html">
+                Current Destination: <input type="text" name="Location" value="La Jolla">
+                Current Car: <input type="text" name="Vehicle" value="Hona CRV"><br>
+                Current Seats: <input type="text" name="Seats" value="2"><br>
+                Current Price: <input type="text" name="Price" value="$3">
             </div>
         </div>
         <div class="col-xs-3">
             <h5></h5>
             </div>    
-    
     </div>
+</div> 
 
-</div>    
+<br>
+ <div class="col-sm-12 controls" align="center">
+      <button type="submit" class="btn btn-default btn-md">Save Changes</button>
+    </form>
+  </div>
+
+
 </body>
 <!-- JQuery -->
       

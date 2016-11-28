@@ -2,7 +2,6 @@
 <html>
   <head>
 
-
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='134685362-0',d=document,l=d.location,c=d.cookie;
@@ -18,8 +17,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
 
-
-
+    
 
 <title>Filter</title>
 <link rel="icon" type="image/png" href="carro.png.png"/>
@@ -107,12 +105,56 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 <!-- Start of Form -->
 <div class="row">
+  {{#each projects}}
           <div class="col-xs-2"></div>
           <div class="col-xs-8" style="text-align:center">
               <h2>What are you looking for?</h2>
                 <form action="results.html">
                     <p>How much do you want to pay?</p>
-                    <input type="text" name="charge" placeholder="$"><br>
+                    {{#if check}}
+                      <input type="text" name="charge" placeholder="$"><br>
+                    {{else}}
+                      <div class="container2">
+  <div class="row1">
+    <form>
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$1-10</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$11-20</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$21-30</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$31-40</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$41-50</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$51+</span>
+            </label>
+        </form>
+  </div>
+</div>
+                    {{/if}}
                     <input type="checkbox" name="nopref"> No Preference<br>
                     <p>How far do you want to go?</p>
                     <input type="text" name="distance" placeholder="Miles"><br>
@@ -129,6 +171,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
               
             </div>
           <div class="col-xs-2"></div>
+          {{/each}}
       </div>
     
 <!-- End of form -->

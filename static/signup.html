@@ -125,10 +125,10 @@
 
 <div class="container">
     <div class="row">
-        <div style="margin-top:20px; margin-left:27%; margin-right:38%" class="mainbox col-lg-10 col-lg-offset-2 col-md-8 col-sm-8 col-xs-10">
-            <div class="col-lg-7 col-md-10 col-sm-9 col-xs-8 no-padding">
+        <div style="margin-top:20px" class="mainbox col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-2">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 no-padding">
                 <div class="info">
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 form-bg" style="border:2px solid #304e6d;">
+                    <div class="col-lg-12 col-md-12 col-sm-10 col-xs-8 form-bg" style="border:2px solid #304e6d;">
                         <div class="main-form">
                             <div role="tabpanel">
                             <!-- Nav tabs -->
@@ -144,23 +144,13 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="login">
-                                    <form name="login" action="" method="get" accept-charset="utf-8">
-                                    <input class="form-control" type="text" name="email" placeholder="Email Address"/>
-                                    <input class="form-control" type="text" name="pswrd" placeholder="Password"/>
-                                    <div class="checkbox" align="left"><input type="checkbox" name="" value=""/> Remember Me. </div>
+                                    <form action="" method="get" accept-charset="utf-8">
+                                    <input class="form-control" type="email" name="" value="" placeholder="Email Address" id="email">
+                                    <input class="form-control" type="password" name="" value="" placeholder="Password">
+                                    <div class="checkbox" align="left"><input type="checkbox" name="" value=""> Remember Me. </div>
                                         <!--<input class="btn btn-submit" href="areyou.html" type="submit" name="" value="Login">-->
-                                        <a href="areyou.html" class="btn btn-submit" role="button" onclick="check(this.tab-pane)">Login <span class="glyphicon glyphicon-log-in"></span></a>
+                                        <a href="areyou.html" class="btn btn-submit" role="button">Login <span class="glyphicon glyphicon-log-in"></span></a>
                                     </form>
-                                    <script language="javascript">
-                                    function check(tab-pane){
-                                        if(tab-pane.email.value == "jimmy_quach@gmail.com" && tab-pane.pswrd.value == "jimmyiscool"){
-                                            window.location.href = "/areyou"
-                                        }
-                                        else{
-                                            alert("Error Password or Username")
-                                        }
-                                    }
-                                    </script>
                                 </div>
 
 

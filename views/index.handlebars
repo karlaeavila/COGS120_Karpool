@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Results</title>	
+	<title>What would you like to do?</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -13,37 +13,27 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
 
-    <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        #result{
-            outline: 1px black solid;
-            font-family: sans-serif;
-            font-size: 1.5em;
-            padding-top: 5px;
-            text-decoration: none;
-        }
-        #dist{
-            text-align: right;
-        }
-        #redir{
-            text-decoration: none;
-        }
-        a{
-            text-decoration: none;
-        }
-    </style>
+
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- boostrap script -->
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- boostrap script end -->
 
 
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></script>
 
 
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">
+    <link href="css/index2.css" rel="stylesheet">
 
 
 
@@ -61,84 +51,88 @@
 </head>
 
 <body>
+<!-- add buttons -->
 
-	<!-- Body of top bar -->
 
-     <div class="row" style="padding-bottom:4em">  
-        <nav class="navbar navbar-default navbar-fixed-top col-xs-6 col-xs-offset-3">
-    <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+
+
+
+
+ <!-- Navigation Bar HTML -->
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
     <div class="navbar-header">
+      <!--<a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road"></span></a>-->
+
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a href="filter.html" style="text-decoration:none">
-        <button type="button" class="btn btn-default navbar-btn">Back</button></a>
+      <a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    
-      <form class="navbar-form navbar-left" style="padding-right: 3em; padding-left: 3em">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" >
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <button type="button" class="btn btn-default navbar-btn navbar-right">Filter</button>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+      <ul class="nav navbar-nav navbar-right">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="filter.html">Back</a></li>
+      <li><a href="areyou.html">Home</a></li>
+      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Current Ride</a></li>
+            <li><a href="#">Previous Rides</a></li>
+          </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
 </nav>
-</div>
+<!-- End of Navigation Bar HTML -->
 
-<!-- end body of top bar -->
 
 
 
 
 <h1><center>Here are the available places:</center></h1>
     
- 
-{{#each places}}
+ <!-- new table -->
 
-<!-- new code -->
-<div class="row" style="text-decoration:none"><!-- 1st selection -->
-    <div class="col-xs-3"></div>
-    <a href="almostthere.html" style="text-decoration: none;">
-    <div class="col-xs-6" id="result" style="border-color:black; border-size:2px;">
-        <div class="col-xs-10" style="outline-width: thick;">
-        <p> {{place}} </p>
-        <img src = {{imageURL}} style="width:100px;height:100px;">
-        <p style="color: white">_</p>
-        <p> Driver: {{driver}}</p> 
-        <p> {{seats}} Seat Available</p>
+    <!-- Plans -->
+    <section id="plans">
+        <div class="container1">
+            <div class="row">
+               
+                {{#each people}}
+                <!-- item #1 -->
+                <div class="col-md-3 text-center">
+                    <div class="panel panel-danger panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-desktop"></i>
+                            <h2>{{place}}</h2>
+                            <center><img src={{placeimageURL}} alt="Car" style="width:100px;height:100px;"> </center>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>{{price}}</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i> Driver: {{name}}</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> Distance: 0.6 miles</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> Seats available: {{seats}}</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-danger" href="https://cogs120-karpool.herokuapp.com/almostthere.html">Choose</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
         </div>
-        <div class="col-xs-2" id="dist">
-        <p> 0.3mi </p>
-        <p> {{price}}</p>
-        </div>
-    </div>
-    </a>
-    <div class="col-xs-3">
-    </div>
-</div><!-- 1st selection -->   
+    </section>
+    <!-- /Plans -->
 
-<!--end new code -->
-
-
-<!-- original code
-<div class = "myPlace">
-<img src = {{imageURL}}>
-<h3> <a href = "#" >{{place}} </a> </h3>
-<p> {{driver}} </p>
-</div>
-<hr>
--->
-
-{{/each}}
+<!-- end of new table -->
 
 
 <!-- Latest compiled and minified JavaScript -->

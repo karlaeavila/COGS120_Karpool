@@ -40,17 +40,20 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-<<<<<<< HEAD
+//app.use('/', routes);
+
 //app.get('/', index.view);
-=======
+
+
 app.get('/', index.view);
 app.get('data/:id', data.view);
 app.get('/check', index.viewCheck);
->>>>>>> bf1a2801bc8bab0deb8ff7dd21c9f4c20dda62bc
+app.get('/', filter.view);
+
 
 // Example route
 // app.get('/users', user.list);
-app.get('/',filter.view);
+
  	
 //app.get('/', myaccount.view);
 

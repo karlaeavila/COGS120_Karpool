@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Previous Trips</title>
+    <link rel="icon" type="image/png" href="carro.png.png"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- boostrap script -->
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- boostrap script end -->
+
+  <!-- Latest compiled and minified JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">-->
+
+ 
+    <style>
+    body{
+      background-color: #A9BCD0;
+  }
+        p{
+            margin-bottom: .15em;
+            margin-top: .15em;
+        }
+        input{
+            margin-bottom: .15em;
+            margin-top: .15em;
+        }
+  </style>
+  </head>
+    
+
+
+  <body>
+
+
+
+    <!-- Navigation Bar HTML -->
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!--<a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road"></span></a>-->
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="areyou.html">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="myaccount.html">My Profile</a></li>
+            <li><a href="managetrips.html">My Rides</a></li>
+          </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navigation Bar HTML -->  
+
+
+
+
+  <div class="row">
+    <div class="container">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+
+                <button class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown">Manage Trips <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="managetrips.html">Current Trip</a></li>
+                      </ul>
+            
+                <!--<button class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Manage Trips
+                </button>-->
+                
+        </div>
+        <div class="col-xs-3"></div>
+    </div>
+</div>
+    <div class="row">
+        <div class="container">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+            <h1>Previous Trips:</h1>
+            <hr style="width:100%; color: black; align:left">
+            <!--<div class="col-xs-9">
+                <h5>Current Destination: La Jolla</h5>
+                <h5>Current Car: SUV</h5>
+                <h5>Current Seats: 2</h5>
+                <h5>Current Price: $3</h5>
+            </div>-->
+        </div>
+        <div class="col-xs-3">
+            <h5></h5>
+            </div>    
+    </div>
+</div>
+
+
+<!-- grid listing attempt -->
+
+<div class="container bg">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
+     <div class="rlisting">
+        <div class="col-md-12 nopad">
+          <img src="Joshua_Tree.jpg" class="img-responsive">
+        </div>
+        <div class="col-md-12 nopad">
+          <h5>Joshua Tree</h5>
+           <p>Andre drove you and 2 others to Joshua Tree for $15.</p>
+           <div class="rfooter">
+             <i class="fa fa-phone-square"></i> You rated 4.5/5
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
+     <div class="rlisting">
+        <div class="col-md-12 nopad">
+          <img src="seaworld.jpeg" class="img-responsive">
+        </div>
+        <div class="col-md-12 nopad">
+          <h5>Sea World</h5>
+           <p>Linda drove you and 1 other to Sea World for $5.</p>
+           <div class="rfooter">
+             <i class="fa fa-phone-square"></i> You rated 4/5
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
+     <div class="rlisting">
+        <div class="col-md-12 nopad">
+          <img src="houseofblues.jpeg" class="img-responsive">
+        </div>
+        <div class="col-md-12 nopad">
+          <h5>House of Blues</h5>
+           <p>You drove yourself and 3 others to House of Blues for $6 each.</p>
+           <div class="rfooter">
+             <i class="fa fa-phone-square"></i> You were rated 4.8/5
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 rwrapper">
+     <div class="rlisting">
+        <div class="col-md-12 nopad">
+          <img src="sdzoo.jpeg" class="img-responsive">
+        </div>
+        <div class="col-md-12 nopad">
+          <h5>San Diego Zoo</h5>
+           <p>You drove yourself and 2 others to San Diego Zoo for $8 each.</p>
+           <div class="rfooter">
+             <i class="fa fa-phone-square"></i> You were rated 4.2/5
+           </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</div>
+
+<!-- end of attempt -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+  </body>
+</html>

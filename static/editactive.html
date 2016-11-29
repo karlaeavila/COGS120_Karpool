@@ -1,10 +1,16 @@
 <!doctype html>
 <html>
-  <head>
-    <title>What would you like to do?</title>
-    <link rel="icon" type="image/png" href="carro.png.png"/>
+<head>
+  <title>Manage Trips</title>
+  <link rel="icon" type="image/png" href="carro.png.png"/>
 
-    <meta charset="UTF-8"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    
+        <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Latest compiled and minified CSS -->
@@ -22,16 +28,17 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/introHCI.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+<style>
+body{
+    background-color: #A9BCD0;
+}
+</style>
 
-    <!--<script src="css/login.js"></script>-->
+</head>
 
-	
-  <!-- Navigation Bar HTML -->
+<body>
+    
+    <!-- Navigation Bar HTML -->
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -43,13 +50,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="areyou.html">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
+      <a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="signup.html">Back (Log out)</a></li>
+      <li><a href="areyou.html">Home</a></li>
       <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="myaccount.html">My Profile</a></li>
@@ -61,43 +68,56 @@
   </div>
 </nav>
 <!-- End of Navigation Bar HTML -->
+    
+<div class="row">
+    <div class="container">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
 
-	
-  	<center>
-  		<h1 style="color:white">What would you like to do?</h1>
-	    <br>
-		
-    <div class="col-sm-12 controls">
-    <form action="filter.html">
-      <button type="submit" class="btn btn-default btn-lg">Find me a place to go! <span class="glyphicon glyphicon-search"></span></button>
+                <button class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown">Manage Trips <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Previous Trips</a></li>
+                      </ul>
+            
+                <!--<button class="btn btn-default btn-md">
+                <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Manage Trips
+                </button>-->
+                
+        </div>
+        <div class="col-xs-3"></div>
+    </div>
+</div>
+    <div class="row">
+        <div class="container">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+            <h1>Active Trip:</h1>
+            <hr style="width:100%; color: black; align:left">
+            <div class="col-xs-9">
+              <form action="managetrips.html">
+                Current Destination: <input type="text" name="Location" value="La Jolla">
+                Current Car: <input type="text" name="Vehicle" value="Hona CRV"><br>
+                Current Seats: <input type="text" name="Seats" value="2"><br>
+                Current Price: <input type="text" name="Price" value="$3">
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <h5></h5>
+            </div>    
+    </div>
+</div> 
+
+<br>
+ <div class="col-sm-12 controls" align="center">
+      <button type="submit" class="btn btn-default btn-md">Save Changes</button>
     </form>
-    <br>
-
-  		<p> OR </p>
-		
-			    <h2></h2>
-		
-  	<div class="col-sm-12 controls">
-    <form action="going.html">
-      <button type="submit" class="btn btn-default btn-lg">I'm going somewhere! <span class="glyphicon glyphicon-flag"></span></button>
-    </form>
-
-  	</center>
-   </head>
-  <body>
-  <style>
-  	body{
-  		background-color: #A9BCD0;
-	}
-  </style>
-
-  <body>
-  
+  </div>
 
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+<!-- JQuery -->
+      
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  </body>
 </html>

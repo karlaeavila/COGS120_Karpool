@@ -2,27 +2,7 @@
 <html>
   <head>
 
-
-<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='134685362-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
-
-
-
-
 <title>Filter</title>
-<link rel="icon" type="image/png" href="carro.png.png"/>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -85,12 +65,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="areyou.html">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
+      <a class="navbar-brand">Karpool <span class="glyphicon glyphicon-road" aria-hidden="true"></span></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
     </ul>
     <ul class="nav navbar-nav navbar-right">
+      <li><a href="areyou.html">Home</a></li>
       <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="myaccount.html">My Profile</a></li>
@@ -106,12 +87,51 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 <!-- Start of Form -->
 <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8" style="text-align:center">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-6" style="text-align:center">
               <h2>What are you looking for?</h2>
                 <form action="results.html">
                     <p>How much do you want to pay?</p>
-                    <input type="text" name="charge" placeholder="$"><br>
+                    <div class="container2">
+  <div class="row1">
+    <form>
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$1-10</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$11-20</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$21-30</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$31-40</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$41-50</span>
+            </label>
+
+
+            <label>
+                <input type="checkbox">
+                <span class="label-text">$51+</span>
+            </label>
+        </form>
+  </div>
+</div>
                     <input type="checkbox" name="nopref"> No Preference<br>
                     <p>How far do you want to go?</p>
                     <input type="text" name="distance" placeholder="Miles"><br>
@@ -121,15 +141,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                     <input type="checkbox" name="nopref"> No Preference<br>
               </form>
               
-        <!--<button id="myBtn" type="button" style="margin-top: 1em;">Submit</button
+        <!--<button id="myBtn" type="button" style="margin-top: 1em;">Submit</button-->
         <a href="results.html" style="text-decoration:none">
-        <button type="button" class="btn btn-default navbar-btn">Submit</button></a>-->
-        <div class="col-xs-12 col-md-12 text-center">
-        <input type="submit" id="submitButton" class="btn btn-default" value="Submit"></input>
+        <button type="button" class="btn btn-default navbar-btn">Submit</button></a>
               
               
             </div>
-          <div class="col-xs-2"></div>
+          <div class="col-xs-3"></div>
       </div>
     
 <!-- End of form -->
@@ -157,6 +175,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   ga('send', 'pageview');
 
 </script>
+
 
 
     

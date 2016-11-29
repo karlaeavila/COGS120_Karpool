@@ -144,13 +144,23 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="login">
-                                    <form action="" method="get" accept-charset="utf-8">
-                                    <input class="form-control" type="email" name="" value="" placeholder="Email Address" id="email">
-                                    <input class="form-control" type="password" name="" value="" placeholder="Password">
-                                    <div class="checkbox" align="left"><input type="checkbox" name="" value=""> Remember Me. </div>
+                                    <form name="login" action="" method="get" accept-charset="utf-8">
+                                    <input class="form-control" type="text" name="email" placeholder="Email Address"/>
+                                    <input class="form-control" type="text" name="pswrd" placeholder="Password"/>
+                                    <div class="checkbox" align="left"><input type="checkbox" name="" value=""/> Remember Me. </div>
                                         <!--<input class="btn btn-submit" href="areyou.html" type="submit" name="" value="Login">-->
-                                        <a href="areyou.html" class="btn btn-submit" role="button">Login <span class="glyphicon glyphicon-log-in"></span></a>
+                                        <a href="areyou.html" class="btn btn-submit" role="button" onclick="check(this.tab-pane)">Login <span class="glyphicon glyphicon-log-in"></span></a>
                                     </form>
+                                    <script language="javascript">
+                                    function check(tab-pane){
+                                        if(tab-pane.email.value == "jimmy_quach@gmail.com" && tab-pane.pswrd.value == "jimmyiscool"){
+                                            window.location.href = "/areyou"
+                                        }
+                                        else{
+                                            alert("Error Password or Username")
+                                        }
+                                    }
+                                    </script>
                                 </div>
 
 
